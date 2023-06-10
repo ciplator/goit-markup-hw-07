@@ -23,119 +23,158 @@
 
 
 
-    <header class="page-header">
-        <div class="container header-container">
-            <nav class="page-nav">
-                <a href="./index.html" class="logo link">Web<span class="logo-part-dark">Studio</span></a>
+     <header class="page-header">
+      <div class="header-container container">
+        <nav class="page-nav">
+          <a href="./index.html" class="logo link"
+            >Web<span class="logo-part-dark">Studio</span></a
+          >
 
-                <ul class="menu list">
-                    <li class="menu-item"><a class="menu-link link" href="./index.html">Studio</a></li>
-                    <li class="menu-item"><a class="menu-link link current" href="./portfolio.html">Portfolio</a></li>
-                    <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link current" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contact-info link">
+          <ul class="contact-info-list list">
+            <li class="contact-item">
+              <a class="contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
 
-                </ul>
-            </nav>
-            <address class="contact-info link">
-                <ul class="contact-info-list list">
-                    <li class="contact-item"><a class="contact-link link"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="contact-item"><a class="contact-link link" href="tel:+110001111111">+11 (000)
-                            111-11-11</a>
-                    </li>
-                </ul>
+            <li class="contact-item">
+              <a class="contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <button type="button" class="mobile-menu-open-btn js-open-menu">
+          <svg
+            class="mobile-menu-btn-icon"
+            aria-label="menu"
+            width="32"
+            height="22"
+          >
+            <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg
+              class="mobile-menu-close-icon"
+              aria-label="menu close button"
+              width="8"
+              height="8"
+            >
+              <use href="./images/icons.svg#modal-close-icon"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-list list">
+            <li class="mobile-list-item current">
+              <a class="mobile-list-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-list-item">
+              <a class="mobile-list-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-list-item">
+              <a class="mobile-list-link link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu-info-wrapper">
+            <address class="mobile-menu-contact-info link">
+              <ul class="mobile-info-list list">
+                <li class="mobile-list-contact-item">
+                  <a
+                    class="mobile-menu-contact-link tel link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+
+                <li class="mobile-list-contact-item">
+                  <a
+                    class="mobile-menu-contact-link email link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
             </address>
-
-            <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
-                <svg class="mobile-menu-btn-icon" aria-label="menu" width="32" height="22">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-            </button>
-        </div>
-
-        <div class="mobile-menu js-menu-container">
-
-            <div class="mobile-menu-container">
-                <button type="button" class="mobile-menu-close-btn js-close-menu">
-                    <svg class="mobile-menu-close-icon" aria-label="menu close button" width="8" height="8">
-                        <use href="./images/icons.svg#icon-close"></use>
+            <div class="mobile-menu-social-media">
+              <ul class="mobile-menu-social-list list">
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg
+                      class="social-list-icon"
+                      aria-label="instagram icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
-                </button>
+                  </a>
+                </li>
 
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg
+                      class="social-list-icon"
+                      aria-label="twitter icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
 
-                <ul class="mobile-menu-list list">
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg
+                      class="social-list-icon"
+                      aria-label="facebook icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
 
-                    <li class="mobile-list-item current"><a class="mobile-list-link link" href="./index.html">Studio</a>
-                    </li>
-                    <li class="mobile-list-item"><a class="mobile-list-link link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="mobile-list-item"><a class="mobile-list-link link" href="">Contacts</a></li>
-
-                </ul>
-
-                <div class="mobile-menu-info-wrapper">
-                    <address class="mobile-menu-contact-info link">
-
-                        <ul class="mobile-info-list list">
-
-                            <li class="mobile-list-contact-item"><a class="mobile-menu-contact-link tel link"
-                                    href="tel:+110001111111">+11
-                                    (000) 111-11-11</a>
-                            </li>
-
-                            <li class="mobile-list-contact-item"><a class="mobile-menu-contact-link email link"
-                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
-                            </li>
-                        </ul>
-
-                    </address>
-                    <div class="mobile-menu-social-media">
-
-                        <ul class="mobile-menu-social-list list">
-
-                            <li class="social-list-item">
-
-                                <a href="" class="social-list-link">
-
-                                    <svg class="social-list-icon" aria-label="instagram icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-
-                            <li class="social-list-item">
-
-                                <a href="" class="social-list-link">
-                                    <svg class="social-list-icon" aria-label="twitter icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-
-                            </li>
-
-                            <li class="social-list-item">
-                                <a href="" class="social-list-link">
-                                    <svg class="social-list-icon" aria-label="facebook icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-
-                            <li class="social-list-item">
-                                <a href="" class="social-list-link">
-
-                                    <svg class="social-list-icon" aria-label="linkedin icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg
+                      class="social-list-icon"
+                      aria-label="linkedin icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-
+      </div>
     </header>
     <main>
 
