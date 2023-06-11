@@ -119,6 +119,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .mobile-menu {
@@ -1284,7 +1285,7 @@ img {
   }
 
   .our-team-section {
-    padding: 120px 0;
+    padding: 96px 0;
   }
 
   .customers-section {
