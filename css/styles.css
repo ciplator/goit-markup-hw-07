@@ -238,7 +238,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Mobile/Dark-bg.jpg);
+    url(../images/people_office.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -253,7 +253,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Mobile/Dark-bg@2x.jpg);
+      url(../images/people-office@2x.jpg);
   }
 }
 
@@ -269,7 +269,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  height: 120px;
   text-align: center;
   color: #ffffff;
 }
@@ -299,7 +298,6 @@ img {
   transition: background-color 250ms var(--time-function);
   margin-top: 72px;
 }
-
 
 .order-button:hover,
 .order-button:focus {
@@ -481,7 +479,6 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
 }
 
 .footer-info {
@@ -493,7 +490,6 @@ img {
 
 .page-footer {
   background-color: var(--link-color);
-  padding: 100px 0;
 }
 
 .footer-text {
@@ -517,6 +513,8 @@ img {
 
 .social-media-text {
   text-align: center;
+  color: #f4f4fd;
+  margin-bottom: 16px;
 }
 
 .social-media-footer {
@@ -529,7 +527,6 @@ img {
 .social-list-footer {
   display: flex;
   column-gap: 16px;
-  margin-top: 16px;
 }
 
 .footer-list-link {
@@ -571,6 +568,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+  opacity: 0.6;
   margin-bottom: 16px;
 }
 .footer-form-button:hover,
@@ -652,7 +650,6 @@ img {
 }
 
 .project-card {
-  margin-bottom: 48px;
   width: calc((100% - 24px) / 2);
 }
 
@@ -1097,11 +1094,14 @@ img {
   }
 
   .hero {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/Dark-bg.jpg);
+      url(../images/people_office.jpg);
   }
 
   @media (min-resolution: 2dppx) {
@@ -1110,7 +1110,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/tablet/Dark-bg@2x.png);
+        url(../images/people-office@2x.jpg);
     }
   }
 
@@ -1149,6 +1149,7 @@ img {
   .customers-list {
     justify-content: center;
     gap: 24px;
+    row-gap: 72px;
   }
   .customers-list-item {
     width: calc((100% - 24px) / 4);
@@ -1159,24 +1160,19 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
-    gap: 24px;
-    row-gap: 72px;
+    width: 582px;
   }
 
   .footer-info {
-    align-items: flex-start;
+    display: inline;
   }
 
   .social-media-text {
     text-align: left;
   }
   .social-media-footer {
-    display: inline;
-  }
-
-  .footer-form-container {
-    margin-left: -100px;
+    display: block;
+    margin-left: 24px;
   }
 
   .footer-form-text {
@@ -1197,8 +1193,6 @@ img {
     min-width: 408px;
   }
 
-  /* Tablet Portfolio */
-
   .filter-button-list {
     justify-content: center;
     margin-bottom: 68px;
@@ -1211,9 +1205,20 @@ img {
     row-gap: 48px;
   }
 }
+
 @media screen and (max-width: 1157px) {
   .advantages-section-icon {
     display: none;
+  }
+
+  .footer-text {
+    margin-bottom: 72px;
+  }
+  .social-list-footer {
+    margin-bottom: 72px;
+  }
+  .page-footer {
+    padding: 96px 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1252,6 +1257,7 @@ img {
       url(../images/people_office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -1272,7 +1278,6 @@ img {
     justify-content: center;
     margin-bottom: 8px;
     gap: 24px;
-    
   }
 
   .our-advantages-list {
@@ -1286,10 +1291,6 @@ img {
 
   .our-team-section {
     padding: 96px 0;
-  }
-
-  .customers-section {
-    padding: 120px 0;
   }
 
   .customers-list {
@@ -1314,14 +1315,13 @@ img {
   }
 
   .page-footer {
-    display: flex;
-    justify-content: center;
+    padding: 100px 0;
   }
 
   .footer-container {
-    margin: 0;
+    display: flex;
     flex-wrap: nowrap;
-    gap: 0;
+    width: 1158px;
   }
 
   .social-media-footer {
@@ -1331,6 +1331,6 @@ img {
 
   .footer-form-container {
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 80px;
   }
 }
