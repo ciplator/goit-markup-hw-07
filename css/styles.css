@@ -542,7 +542,7 @@ img {
 .social-list-footer {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  column-gap: 16px;
   margin-top: 16px;
 }
 
@@ -585,7 +585,8 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom:16px ;
+  
 }
 .footer-form-button:hover,
 .footer-form-button:focus {
@@ -1038,7 +1039,6 @@ img {
 }
   .modal {
     max-width: 428px;
-    height: 576px;
   }
 
   .logo {
@@ -1169,14 +1169,17 @@ img {
     width: calc((100% - 24px) / 4);
   }
 
+
+
   .footer-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 24px;
-    padding-left: 93px;
+    row-gap: 72px;
+  
   }
 
   .footer-info {
@@ -1189,7 +1192,9 @@ img {
   }
 
   .footer-form-container {
-    margin-top: 72px;
+
+    margin-left: -100px;
+
   }
 
   .footer-form-text {
@@ -1203,6 +1208,8 @@ img {
 
   .footer-form-input {
     min-width: 264px;
+    margin-bottom: 0;
+    
   }
 
   .modal {
@@ -1218,12 +1225,10 @@ img {
 
   .projects-card-list {
     display: flex;
-
-    padding-bottom: 120px;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    flex-basis: calc((100% - 24px) / 3);
-  }
+    }
 }
 
 @media screen and (min-width: 1158px) {
