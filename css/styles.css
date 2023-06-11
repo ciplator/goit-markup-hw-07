@@ -299,15 +299,6 @@ img {
   margin-top: 72px;
 }
 
-@media (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/mobile/Dark-bg@2x.jpg);
-  }
-}
 
 .order-button:hover,
 .order-button:focus {
