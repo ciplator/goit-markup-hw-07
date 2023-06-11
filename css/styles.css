@@ -119,7 +119,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding-top: 24px;
-  padding-bottom: 24px;
+  
 }
 
 .mobile-menu {
@@ -214,7 +214,18 @@ img {
   text-transform: capitalize;
   color: #4d5ae5;
 }
-
+@media screen and (max-width: 427px)
+{
+  .tel{
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 388px)
+{
+  .tel{
+    font-size: 25px;
+  }
+}
 .email {
   font-weight: 500;
   font-size: 20px;
@@ -264,6 +275,12 @@ img {
   text-align: center;
   color: #ffffff;
 }
+@media screen and (max-width: 350px)
+{
+  .page-main-title{
+    font-size: 32px;
+  }
+}
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
@@ -292,7 +309,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mobile/hero-mobile/hero@2x.jpg);
+      url(../images/mobile/Dark-bg@2x.jpg);
   }
 }
 
@@ -344,17 +361,19 @@ img {
 
 .our-advantages-section {
   padding-top: 96px;
-  padding-bottom: 24px;
+  padding-bottom: 96px;
 }
 
 .our-services-list {
   display: flex;
   gap: 24px;
 }
-
-.advantages-list-item {
-  margin-bottom: 72px;
+.our-advantages-list{
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
+
 
 .advantages-title {
   text-align: center;
@@ -387,7 +406,6 @@ img {
 
 .our-team-section {
   background-color: #f4f4fd;
-  margin-top: 24px;
   padding: 96px 0;
 }
 
@@ -446,7 +464,8 @@ img {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 .customers-list-link {
@@ -464,7 +483,6 @@ img {
 .customers-list-item {
   max-height: 88px;
   width: calc((100% - 16px) / 2);
-  margin-bottom: 65px;
 }
 
 .customers-list-link:hover,
@@ -1012,10 +1030,12 @@ img {
   }
   .header-container {
     justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-
+.contact-item{
+  line-height: normal;
+}
   .modal {
     max-width: 428px;
     height: 576px;
@@ -1043,9 +1063,11 @@ img {
   .contact-info-list {
     display: flex;
     flex-direction: column;
+    gap: 12px;
   }
 
   .menu-link {
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
@@ -1116,9 +1138,12 @@ img {
   }
 
   .our-advantages-list {
-    display: flex;
+        display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 
   .advantages-title {
@@ -1209,8 +1234,8 @@ img {
   }
 
   .header-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .contact-info-list {
