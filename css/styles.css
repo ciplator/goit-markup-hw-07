@@ -1278,8 +1278,9 @@ img {
   .advantages-img-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
     margin-bottom: 8px;
+    gap: 24px;
+    
   }
 
   .our-advantages-list {
